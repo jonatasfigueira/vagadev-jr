@@ -1,0 +1,50 @@
+.section-products {
+    top: -70px;
+}
+
+.product-title {
+    @include type-1(24);
+    color: $darkblue;
+    margin-bottom: 80px;
+    svg {
+        vertical-align: middle;
+        margin-right: 20px;
+    }
+}
+
+.product-list {
+    .product-box {
+        box-shadow: 0px 4px 20px 7px rgba(0, 0, 0, 0.07);
+        border-radius: 10px;
+    }
+    .product-img {
+        border-bottom: 3px solid $blue;
+    }
+    .product-info {
+        background: $silver;
+        padding: 20px;
+        h2 {
+            @include type-1(16);
+            color: $darkblue;
+        }
+        span {
+            @include type-2(18);
+            color: $darkblue;
+            display: block;
+            margin: 20px 0;
+        }
+    }
+    .product-btn {
+        padding: 10px;
+        background: $blue;
+        color: $white;
+        display: block;
+        width: 250px;
+        margin: 0 auto;
+        // position: absolute;
+        @include type-2(18);
+        border-radius: 6px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}

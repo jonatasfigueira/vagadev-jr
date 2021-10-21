@@ -1,0 +1,21 @@
+/*!
+Theme Name: agência n1 - vaga front-end jr 
+Author: Jonatas Figueira  
+Version: 1.0
+*/
+
+// Reset & Grid
+@import 'reset';
+@import 'grid';
+@import 'fonts';
+@import 'variables-mixins';
+// Global
+@import 'global';
+// Modules
+@import 'slide';
+@import 'nav';
+@import 'banner';
+@import 'products';
+@import 'footer';
+@import 'nav-mobile';
+// Páginas

@@ -1,0 +1,63 @@
+        .header {
+            margin-top: 40px;
+            position: absolute;
+            width: 100%;
+            z-index: 1000;
+            .header_nav {
+                display: flex;
+                -webkit-box-pack: justify;
+                #nav-btn {
+                    padding: 5px 0
+                }
+            }
+            #menu {
+                #menu-category-um {
+                    width: 100px;
+                    height: 200px;
+                    float: left;
+                    background: $blue;
+                    padding: 20px;
+                }
+                #menu-category-dois {
+                    width: 100px;
+                    height: 200px;
+                    float: left;
+                    background: $blue;
+                    padding: 20px;
+                }
+                #menu-category-tres {
+                    width: 100px;
+                    height: 200px;
+                    float: left;
+                    background: $blue;
+                    padding: 20px;
+                }
+            }
+        }
+        
+        .menu-nav {
+            @include type-1(14);
+            float: right;
+            li {
+                text-align: right;
+                float: left;
+                color: $white;
+                border-left: 1px solid;
+                height: 31px;
+                margin-left: 20px;
+                margin-right: 20px;
+                padding-left: 33px;
+                &:first-child {
+                    border-left: none;
+                }
+                svg {
+                    vertical-align: middle;
+                    margin-right: 10px;
+                }
+                a {
+                    color: $white;
+                    text-transform: uppercase;
+                    vertical-align: middle;
+                }
+            }
+        }

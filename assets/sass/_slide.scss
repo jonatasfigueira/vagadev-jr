@@ -1,0 +1,165 @@
+.main-intro {
+    .alt {
+        float: right;
+        transform: rotate( 90deg);
+        z-index: 7;
+        position: inherit;
+        color: white;
+        background: $blue;
+        @include type-1(16);
+        top: -354px;
+        padding: 12px 20px;
+        height: 60px;
+        left: 80px;
+        width: 220px;
+        display: inline-block;
+        &::after {
+            @include line2;
+            background: $white;
+            width: 40px;
+            float: right;
+            // width: 130px;
+            // &::before {
+            //     margin-left: 10px;
+            // }
+        }
+    }
+}
+
+.info-slider {
+    position: absolute;
+    z-index: 7;
+    padding-bottom: 6.25rem;
+    width: 300px;
+    margin: 0 auto;
+    text-align: right;
+    top: 9rem;
+    left: 52rem;
+    h2 {
+        @include type-1(28);
+        text-transform: uppercase;
+        color: $white;
+    }
+    p {
+        @include type-2(40);
+        color: $blue;
+        sub {
+            vertical-align: super;
+            font-size: smaller;
+            line-height: normal;
+        }
+    }
+    span {
+        @include type-1(12);
+        color: $white;
+    }
+}
+
+.flex-direction-nav {
+    float: right;
+    z-index: 7;
+    position: relative;
+    background: $darkblue;
+    border-radius: 0px 0px 0px 10px;
+    color: $white;
+    top: 412px;
+    left: 60px;
+    padding-bottom: 10px;
+    // text-decoration: none;
+    // display: block;
+    .flex-nav-prev {
+        float: left;
+        a {
+            background: url(../../svgs/angle-left-solid.svg) no-repeat center center;
+            width: 30px;
+            height: 20px;
+            // padding: 10px 14px 25px;
+            display: inline-block;
+        }
+    }
+    .flex-nav-next {
+        float: left;
+        a {
+            background: url(../../svgs/angle-right-solid.svg) no-repeat center center;
+            width: 30px;
+            height: 20px;
+            // padding: 10px 14px 25px;
+            display: inline-block;
+        }
+    }
+}
+
+.flex-control-nav {
+    float: right;
+    z-index: 7;
+    position: relative;
+    background: $darkblue;
+    color: $white;
+    top: 372px;
+    @include type-1(16);
+    padding: 2px 18px;
+    li {
+        float: left;
+        text-align: center;
+        // margin: 0 auto;
+        &:last-child {
+            &::before {
+                content: "/";
+                // display: block;
+            }
+        }
+        .flex-active {
+            font-weight: 700;
+        }
+        a {
+            color: $white;
+        }
+    }
+}
+
+
+/* prev button */
+
+// .flex-prev {
+//     -webkit-perspective-origin: 100% 50%;
+//     perspective-origin: 100% 50%;
+//     -webkit-perspective: 1000px;
+//     perspective: 1000px;
+// }
+// .flex-prev .preview {
+//     -webkit-transform: rotateY(90deg);
+//     transform: rotateY(90deg);
+//     -webkit-transform-origin: 0% 50%;
+//     transform-origin: 0% 50%;
+// }
+
+/* next button */
+
+// .flex-next {
+//     -webkit-perspective-origin: 0% 50%;
+//     perspective-origin: 0% 50%;
+//     -webkit-perspective: 1000px;
+//     perspective: 1000px;
+// }
+// .flex-next .preview {
+//     right: 90px;
+//     left: auto;
+//     -webkit-transform: rotateY(-90deg);
+//     transform: rotateY(-90deg);
+//     -webkit-transform-origin: 100% 100%;
+//     transform-origin: 100% 100%;
+// }
+
+/* hover style */
+
+// .flex-direction-nav a:hover .preview {
+//     opacity: 1;
+//     -webkit-transform: rotateY(0deg);
+//     transform: rotateY(0deg);
+// }
+// /* different hover style for flexslider nav */
+// .flex-direction-nav a {
+//     -webkit-transition: none;
+//     -moz-transition: none;
+//     transition: none;
+// }

@@ -1,0 +1,25 @@
+.section-banner {
+    top: -150px;
+    position: relative;
+    z-index: 7;
+}
+
+.banner {
+    border-radius: 20px;
+    .info-banner {
+        display: block;
+        background: $blue;
+        border-radius: 0px 0px 10px 10px;
+        @include type-2(16);
+        h2 {
+            border-left: 8px solid $darkblue;
+            padding: 10px 20px;
+            border-radius: 0px 0px 10px 10px;
+            &::after {
+                @include line;
+                background: $darkblue;
+                float: right;
+            }
+        }
+    }
+}
